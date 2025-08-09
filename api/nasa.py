@@ -9,5 +9,4 @@ def cur_day_apod():
 
 def specific_day_apod(date: str):
     new_url = url + "&date=" + date
-    print(new_url)
     return requests.get(new_url).json()
